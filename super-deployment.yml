@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deployment
+  labels:
+    app: hello
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+        - name: hello
+          image: gcr.io/grand-verve-359513/my-simple-script@sha256:bc93d046ee10c3db5e39cac7d08655ccc8b2458db6269dc709c154daa6e1ccbe
+          ports:
+            - containerPort: 8080
