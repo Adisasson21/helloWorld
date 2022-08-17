@@ -4,7 +4,7 @@
 
 apt update && apt install docker.io -y
 
-# Hello_Docker - How to create an image
+# Hello_World - How to create an image
 
 Create a simple python script that write anything you want to display
 For example I wanted to display Hello Docker
