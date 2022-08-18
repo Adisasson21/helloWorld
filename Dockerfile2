@@ -1,6 +1,7 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y python3
-ADD hello.py /print/hello.py
-CMD ["/print/hello.py"]
-ENTRYPOINT ["python3"]
+RUN apt-get install -y python python3-pip
+RUN pip install flask
+RUN pip install --upgrade pip
+COPY webApp.py /app/webApp.py
+CMD ["python", "/app/webApp.py"]
