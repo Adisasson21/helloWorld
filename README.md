@@ -26,11 +26,11 @@ Let's make our first image. &emsp; #Note: You must be in the Dockerfile's folder
 --- 
 כדי לדחוף את האימג שיצרנו למאגר של גוגל קודם נייצר tag לאותו אימג &emsp; 
 
-<b>docker tag hello gcr.io/grand-verve-359513/hello </b>
+<b>docker tag hello gcr.io/*/hello </b>
 
 נכנסים לGoogle Cloud container registry ולוחצים על enable כדי שהתמונה תדחף לגוגל 
 
-<b>docker push gcr.io/grand-verve-359513/hello </b>
+<b>docker push gcr.io/*/hello </b>
 
 ---
 
